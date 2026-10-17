@@ -1,9 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Directory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>User Directory</h1>
+      <!-- Search Input -->
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search users..." 
+          autocomplete="off"
+        />
+      </div>
+    </header>
+
+    <!-- Loading Indicator -->
+    <div id="loading" class="loading-spinner" style="display: none;">
+      <div class="spinner"></div>
+      <p>Loading users...</p>
+    </div>
+
+    <!-- Error Message Container -->
+    <div id="error" class="error-msg"></div>
+
+    <!-- Users Grid Container -->
+    <div id="userContainer" class="user-grid"></div>
+
+    <!-- Pagination Controls -->
+    <div id="pagination" class="pagination-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
