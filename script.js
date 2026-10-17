@@ -9,7 +9,7 @@ let totalUsers = 0;
 let users_per_page = 8;
 let currentSearchQuery = "";
 
-const BASE_URL = "http://fakestoreapi.noksha.dev/api/users";
+const BASE_URL = "https://fakestoreapi.noksha.dev/api/users";
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
